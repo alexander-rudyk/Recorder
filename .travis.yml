@@ -2,4 +2,5 @@ language:
   - swift
 osx_image: xcode10.1
 script:
+  - pod install
   - xcodebuild -scheme Genesis_Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' build test
